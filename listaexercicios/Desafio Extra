@@ -1,0 +1,12 @@
+while True:
+    op = input("1-Saldo 2-Depositar 3-Sacar 4-Sair: ")
+
+    if op == "1":
+        print(saldo)
+    elif op == "2":
+        saldo += float(input("Valor: "))
+    elif op == "3":
+        v = float(input("Valor: "))
+        if v <= saldo: saldo -= v
+    else:
+        break
