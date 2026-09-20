@@ -1,0 +1,18 @@
+frase = input("Digite uma frase: ")
+
+frase = frase.lower()
+
+a = frase.count("a")
+e = frase.count("e")
+i = frase.count("i")
+o = frase.count("o")
+u = frase.count("u")
+
+total = a + e + i + o + u
+
+print("Quantidade de A:", a)
+print("Quantidade de E:", e)
+print("Quantidade de I:", i)
+print("Quantidade de O:", o)
+print("Quantidade de U:", u)
+print("Total de vogais:", total)
