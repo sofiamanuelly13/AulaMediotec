@@ -1,12 +1,17 @@
-import random
+nome = input("Nome: ")
+peso = float(input("Peso (kg): "))
+altura = float(input("Altura (m): "))
 
-caracteres = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789"
+imc = peso / (altura ** 2)
 
-quantidade = int(input("Quantos carcteres a senha deve ter?"))
+if imc < 18.5:
+    situacao = "Abaixo do peso"
+elif imc < 25:
+    situacao = "Peso normal"
+elif imc < 30:
+    situacao = "Sobrepeso"
+else:
+    situacao = "Obesidade"
 
-senha = ""
-
-for i in range(quantidade):
-  senha += random.choice(caracteres)
-
-  print(f"\nSenha gerada {senha}")
+print(f"\n{nome}, seu IMC é {imc:.2f}")
+print(f"Classificação: {situacao}")
