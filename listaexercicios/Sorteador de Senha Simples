@@ -1,0 +1,11 @@
+import random
+
+letras = "abcdeABCDE12345"
+senha = ""
+
+n = int(input("Quantidade de caracteres: "))
+
+for i in range(n):
+    senha = senha + random.choice(letras)
+
+print("Sua senha é:", senha)
