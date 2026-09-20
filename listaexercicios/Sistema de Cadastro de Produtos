@@ -1,0 +1,14 @@
+produtos = []
+
+while True:
+    print("\n1-Cadastrar\n2-Listar\n3-Sair")
+    op = input("Opção: ")
+
+    if op == "1":
+        produtos += [input("Produto: ")]
+
+    elif op == "2":
+        print(produtos)
+
+    elif op == "3":
+        break
